@@ -14,7 +14,7 @@ public class Comentario
     public Receita Receita { get; set; }
 
     [Required(ErrorMessage = "O usuário é obrigatória")]
-    public int UsuarioId { get; set; }
+    public string UsuarioId { get; set; }
     [ForeignKey("UsuarioId")]
     public Usuario Usuario { get; set; }
 

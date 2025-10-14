@@ -37,5 +37,6 @@ public class Receita
     [Display(Name = "Modo")]
     [Required(ErrorMessage ="O modo de preparo é obrigatório")]
     public string Preparo { get; set; }
+    public List<ReceitaIngrediente> Ingredientes { get; set; }
 }
 
